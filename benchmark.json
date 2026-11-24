@@ -43,5 +43,27 @@
     "total_bytes": 147142538
   },
   "net_bytes_saved_vs_control": 398901,
-  "enwik8_bytes": null
+  "enwik8_bytes": null,
+  "public_download_restore": {
+    "source_commit": "e0d244c3450b81d4db85d5d7d1df61d6a45dc64b",
+    "release": "https://github.com/Optimatech-Labs-LLC/enwik9-word-ppmd/releases/tag/v0.1.0",
+    "downloaded_signed_out": true,
+    "network_denied_by_macos": true,
+    "elapsed_seconds_including_comparison": 2066.726,
+    "restored_bytes": 1000000000,
+    "direct_byte_comparison": true,
+    "restored_sha256": "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc",
+    "restored_sha1": "2996e86fb978f93cca8f566cc56998923e7fe581",
+    "finished_utc": "2026-11-24T04:17:11.494345+00:00"
+  },
+  "release_source_rebuild": {
+    "source_commit": "e0d244c3450b81d4db85d5d7d1df61d6a45dc64b",
+    "toolchain": "Zig 0.15.2",
+    "encoder_sha256": "ca0ddc10f650095f7f7afa0882e5d0020395247771438f5a67b44aca4f0c395e",
+    "archive_bytes": 146587079,
+    "archive_sha256": "e32deda0579231fc7dd218ec551afc1d15412e57fb29a11ba07a4267ce9d1420",
+    "archive_compared_byte_for_byte": true,
+    "decoder_zip_sha256": "aea264ce719521722cd68e7e9c77657735ee82d2b536196468fd39ecc6f84acb",
+    "decoder_zip_compared_byte_for_byte": true
+  }
 }

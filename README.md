@@ -42,6 +42,8 @@ shasum -a 256 rebuilt.pkg build/offline-decoder.zip
 
 Compare the two hashes against the archive and decoder entries in [SHA256SUMS](SHA256SUMS). On the 48 GB M4 Pro the original benchmark took **34 min 33 s** to encode and **33 min 12 s** to restore and check. Peak resident memory was 10.50 GB during compression and 9.11 GB during restore. Other trials shared the machine. [Benchmark record](benchmark.json)
 
+We repeated the full restore after downloading the GitHub release while signed out. macOS blocked network access for the decoder. All 1,000,000,000 output bytes matched the reference directly and by SHA-256. A separate rebuild from the tagged source reproduced both the full archive and the decoder ZIP byte for byte. The record gives the original and rebuilt encoder hashes separately. [Public-download and source checks](benchmark.json)
+
 ## Credits and license
 
 OptimaTech Labs wrote the Wikipedia transforms, word and phrase predictors, online neural model, probability mixer and packaging. The release includes **Dmitry Shkarin’s PPMd variant I**, **Dmitry Subbotin’s range coder**, and **Igor Pavlov’s 7-Zip C implementation**. The public-domain PPMd files include local changes for the larger memory pool. OptimaTech Labs' code is licensed under GPLv3. The Wikipedia text carries its own terms. [Upstream source](https://github.com/ip7z/7zip/tree/25.01/C) · [Software license](LICENSE) · [Attribution and corpus terms](ATTRIBUTION.md)
