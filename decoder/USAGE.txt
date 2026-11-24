@@ -1,0 +1,3 @@
+Apple Silicon macOS
+./spnumark-restore restore ARCHIVE enwik9
+The launcher unpacks its native executable with /usr/bin/tar.

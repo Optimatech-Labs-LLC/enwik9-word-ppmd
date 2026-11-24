@@ -1,0 +1,1 @@
+Includes public-domain PPMd variant I by Dmitry Shkarin, range coder by Dmitry Subbotin and 7-Zip C implementation by Igor Pavlov (25.01).

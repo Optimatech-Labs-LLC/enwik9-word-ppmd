@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+base=$(CDPATH= cd -P "$(dirname "$0")" && pwd)
+tmp=$(/usr/bin/mktemp -d "${TMPDIR:-/tmp}/wiki-decoder.XXXXXXXX")
+cleanup() {
+    /bin/rm -f "$tmp/decoder"
+    /bin/rmdir "$tmp"
+}
+trap cleanup EXIT
+/usr/bin/tar -xOf "$base/decoder.tar.xz" decoder > "$tmp/decoder"
+/bin/chmod 700 "$tmp/decoder"
+"$tmp/decoder" "$@"

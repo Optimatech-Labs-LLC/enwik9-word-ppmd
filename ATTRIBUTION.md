@@ -1,0 +1,7 @@
+# Attribution
+
+OptimaTech Labs wrote the Wikipedia transforms, dictionary and word models, probability mixing, and release tooling. This code is licensed under the GNU General Public License, version 3. [Software license](LICENSE)
+
+The files in `vendor/ppmd` come from the 7-Zip 25.01 C sources. Dmitry Shkarin wrote PPMd variant I, Dmitry Subbotin wrote the carryless range coder, and Igor Pavlov wrote the 7-Zip C implementation. The upstream PPMd source files carry public-domain notices. This version changes the model pool size and internal references and counts model restarts. The offline decoder ZIP contains the same author credits. [Upstream PPMd decoder](https://github.com/ip7z/7zip/blob/25.01/C/Ppmd8Dec.c) · [Bundled credits](decoder/CREDITS.txt)
+
+The benchmark data is enwik9, the first 1,000,000,000 bytes of the March 3, 2006 English Wikipedia XML dump. The text and revision metadata are the work of Wikipedia contributors. The archive preserves article titles, revision IDs and contributor records. Page histories are available on English Wikipedia. The original text was published under the GNU Free Documentation License. This release includes a copy of version 1.2. Individual quotations and third-party material may carry their original terms. [Corpus license](COPYING-WIKIPEDIA.txt) · [Original dataset](https://mattmahoney.net/dc/textdata.html) · [Wikipedia licensing history](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License)

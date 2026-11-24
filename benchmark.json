@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "benchmark": "Large Text Compression Benchmark",
+  "benchmark_url": "https://mattmahoney.net/dc/text.html",
+  "corpus": {
+    "name": "enwik9",
+    "bytes": 1000000000,
+    "sha256": "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc"
+  },
+  "machine": {
+    "cpu": "Apple M4 Pro",
+    "memory_gb": 48,
+    "os": "macOS",
+    "arch": "arm64"
+  },
+  "options": {
+    "preset": "8g-both",
+    "vocabulary_size": 65536,
+    "neural_width": 128,
+    "previous_words": 8,
+    "ppmd_order": 16,
+    "ppmd_pool_bytes": 8000000000
+  },
+  "scored_files": {
+    "enwik9-word-ppmd.pkg": 146587079,
+    "offline-decoder.zip": 156558
+  },
+  "total_bytes": 146743637,
+  "archive_sha256": "e32deda0579231fc7dd218ec551afc1d15412e57fb29a11ba07a4267ce9d1420",
+  "decoder_zip_sha256": "aea264ce719521722cd68e7e9c77657735ee82d2b536196468fd39ecc6f84acb",
+  "encoder_sha256": "2ffec4cdc1ab508f8dfa610e001e0fe3d90b6bf0eb0a15c514a141d0a84d04e1",
+  "encode_seconds": 2072.902,
+  "restore_seconds_including_comparison": 1992.041,
+  "encode_peak_rss_bytes": 10499145728,
+  "restore_peak_rss_bytes": 9106014208,
+  "restored_bytes": 1000000000,
+  "restored_sha256": "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc",
+  "direct_byte_comparison": true,
+  "matched_control": {
+    "description": "Same word model without numeric, UTF-8 and markup handling",
+    "archive_bytes": 146989812,
+    "decoder_zip_bytes": 152726,
+    "total_bytes": 147142538
+  },
+  "net_bytes_saved_vs_control": 398901,
+  "enwik8_bytes": null
+}

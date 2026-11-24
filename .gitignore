@@ -1,0 +1,8 @@
+/build/
+/unpacked/
+/enwik9
+/*.pkg
+/offline-decoder.zip
+__pycache__/
+*.py[cod]
+.DS_Store
